@@ -58,17 +58,15 @@ body{
 .navbar-left h1{
   font:800 20px arial;
   text-transform: uppercase;
-  letter-spacing: 16px;
-  padding: 4px 0 4px 16px;
+  letter-spacing: 14px;
+  margin-top: 1px;
+  padding: 4px 3px 4px 16px;
   border:2px solid black;
 }
-.navbar-center li{
-  display: inline-block;
-  margin-right: 56px;
-  line-height: 25px;
-}
-.navbar-center li:last-child{
-  margin-right:0px;
+.navbar-center ul{
+  width: 860px;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar-center a {
   text-decoration: none;
@@ -84,7 +82,7 @@ body{
 }
 .navbar-right div{
   display:inline-block;
-  margin-right:20px;
+  margin: 6px 28px 0 0;
   font-size: 25px;
 }
 .navbar-right a{
@@ -130,7 +128,7 @@ ul{ list-style-type: none;}
   color: white;
   background-color: rgb(130, 98, 181);
   font:  14px verdana;
-  padding: 11px 17px;
+  padding: 11px 18px 11px 20px;
   text-decoration: none;
 }
 .shopnowbtn:hover{
@@ -143,14 +141,14 @@ ul{ list-style-type: none;}
 .left .bly{
   color: rgb(225, 225, 225);
   font: bolder 77px verdana;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   position: absolute;
   bottom: 245px; right: 94px;
 }
 .left .eye{
   color: rgb(225, 225, 225);
   font:lighter 52px verdana;
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   position: absolute;
   bottom: 207px; right: 98px;
 }
@@ -175,23 +173,24 @@ ul{ list-style-type: none;}
 .right-top .smallthing{
   color:rgb(106, 107, 108);
   font: bold 16px arial;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   position:absolute;
-  left: 57px;bottom: 84px;
+  left: 55px;bottom: 84px;
 }
 .right-top .make{
   color: black;
   font: bolder 20px verdana;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
+  word-spacing: -3px;
   position: absolute;
-  left: 57px;bottom: 60px;
+  left: 57px;bottom: 59px;
 }
 .right-bottom .folio{
   color:rgb(106, 107, 108);
   font:600 16px arial;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   position:absolute;
-  left: 39px;bottom: 180px;
+  left: 40px;bottom: 178px;
   
 }
 .right-bottom .backpack{
@@ -199,7 +198,7 @@ ul{ list-style-type: none;}
   font: bolder 20px verdana;
   letter-spacing: 0px;
   position: absolute;
-  left: 39px;bottom: 156px;
+  left: 39px;bottom: 154px;
 }
 .right-bottom .shopnowbtn{
   position: absolute;
@@ -210,15 +209,15 @@ ul{ list-style-type: none;}
 
 
 .contain p{
-  margin: 76px 0 12px 0;
-  text-transform:uppercase;letter-spacing: 5px;
+  margin: 78px 0 12px 0;
+  text-transform:uppercase;letter-spacing: 6px;
   font: 750 12px arial;
   color:rgb(130, 98, 181);
   
 }
 .contain h2{
   color:black;
-  text-transform:uppercase;letter-spacing: 6px;
+  text-transform:uppercase;letter-spacing: 3px;
   font:bolder 24px arial;
   position: relative;
 }
@@ -268,13 +267,13 @@ ul{ list-style-type: none;}
   text-transform: uppercase;
   font:700 12px arial;
   padding: 13px 18px;
-  letter-spacing: 0px;
+  letter-spacing:0px;
 }
 .img a:hover{
   color: rgb(130, 87, 181);
 }
 .items-name{
-  margin: 16px 0 0 0;
+  margin: 14px 0 0 0;
   font: 600 14px verdana ;
 }
 .items .rate{
@@ -308,14 +307,14 @@ ul{ list-style-type: none;}
 }
 .news>p{
   padding-top: 77px;
-  letter-spacing: 4px;
+  letter-spacing: 2.5px;
   color:rgb(130, 98, 181);
   font: bolder 12px verdana;
 }
 .news>h2{
   font: 700 23px verdana;
-  margin:12px 0 80px 0;
-  letter-spacing: 2px;
+  margin:12px 0 74px 0;
+  letter-spacing: 1.5px;
   position: relative;
 }
 .news h2::after{  /*Line under the news & event*/
@@ -347,7 +346,7 @@ ul{ list-style-type: none;}
   color: white;
   background-color: rgb(161, 209, 221);
   position:absolute;
-  left: 10px; top: 10px;
+  left: 5px; top: 7px;
 }
 .preview p{
   width: 50px;height: 50px;
@@ -420,6 +419,7 @@ ul{ list-style-type: none;}
   margin: 58px 0 55px 0 ;
   color:white;
   font: 200 16px verdana;
+  letter-spacing: 0.8px;
   position: relative;
 }
 .details h3::after{
@@ -461,7 +461,7 @@ ul{ list-style-type: none;}
   float: left;
   display: inline-block;
   width: 50%;
-  margin: 0 0 10px 0;
+  margin: 0 0 12.1px 0;
 }
 .details-contact{
   width: 260px;
@@ -486,14 +486,14 @@ ul{ list-style-type: none;}
 /* Footer */
 .footer::before{ /* Line upper footer */
   content: "";
-  position:absolute;top:40px;left:0px;
+  position:absolute;top:33px;left:0px;
   width: 100%;
   height: 1px;
   background-color: rgb(57,57,57);
 }
 .footer{
   position: relative;
-  padding: 64px 390px 30px 390px;
+  padding: 58px 390px 30px 390px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -509,6 +509,7 @@ ul{ list-style-type: none;}
 }
 .copyright {
   font:400 14px verdana;
+  letter-spacing: 0.01px;
 }
 .copyright .red-heart{
   font-size: 14px;
