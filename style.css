@@ -39,21 +39,20 @@ body{
 
 /* nav bar */
 .navbar{
-  display: flex;
-  justify-content:space-between;
-  align-items:center;
-  margin:20px 0;
+  height: 80px;
   position: relative;
 }
 .navbar::after{   /* Create line under navbar */
   content: "";
   width: 100%;
   position:absolute;
-  bottom:-20px;
+  bottom:-1px;
   border-bottom: 1px solid rgb(221, 221, 221);
 }
 .navbar-left{
-  margin-left:30px;
+  width: 200px;
+  position: absolute;
+  left: 30px; bottom: 20px;
 }
 .navbar-left h1{
   font:800 20px arial;
@@ -63,8 +62,15 @@ body{
   padding: 4px 3px 4px 16px;
   border:2px solid black;
 }
+.navbar-center{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height: 80px;
+  
+}
 .navbar-center ul{
-  width: 860px;
+  width: 834px;
   display: flex;
   justify-content: space-between;
 }
@@ -79,6 +85,11 @@ body{
 }
 .navbar-center .selected{
   color:rgb(160, 138, 197);
+}
+.navbar-right{
+  position: absolute;
+  bottom: 22px;
+  right: 1px;
 }
 .navbar-right div{
   display:inline-block;
@@ -96,7 +107,7 @@ ul{ list-style-type: none;}
 /* section product */
 .contain{
   width:1140px;
-  margin: 50px auto 77px;
+  margin: 30px auto 77px;
 }
 .showcard{
   display:flex;
@@ -165,7 +176,7 @@ ul{ list-style-type: none;}
 }
 .right-top .whitebox{
   border:1px solid white;
-  width: 298px;height: 128px;
+  width: 300px;height: 130px;
   position: absolute;
   left: 30px; top: 35px;
   z-index: 1;
@@ -363,6 +374,7 @@ ul{ list-style-type: none;}
 .second-movcard div a h5{
   padding: 18px 0 20px 18px;
   font: bold 16px arial;
+  letter-spacing: 0.5px;
 }
 .second-movcard a{
   text-decoration:none;
@@ -394,7 +406,7 @@ ul{ list-style-type: none;}
   padding: 18px 20px;
 }
 .items-social div{ 
-  width: 60px;
+  width: 65px;
 }
 
 
