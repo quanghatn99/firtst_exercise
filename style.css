@@ -6,6 +6,22 @@ body{
   width: 1920px;
   margin:0 auto;
 }
+a{
+  text-decoration: none;
+}
+ul{ list-style-type: none;}
+.black{
+  color:black;
+}
+:root{
+  --purple:rgb(130,98,181);
+}
+/* Font imported */
+:root{
+  --mont:'Montserrat', sans-serif;
+  --open:'Open Sans', sans-serif;
+  --pacifico:'Pacifico', cursive;
+}
 
 
 
@@ -32,7 +48,6 @@ body{
   margin-right: 30px;
 }
 .header-right a{
-  text-decoration: none;
   color: rgb(79,79,79);
 }
 
@@ -55,11 +70,12 @@ body{
   left: 30px; bottom: 20px;
 }
 .navbar-left h1{
-  font:800 20px arial;
+  font-weight: 700;
+  font-size: 20px;
+  font-family:var(--mont);
   text-transform: uppercase;
   letter-spacing: 14px;
-  margin-top: 1px;
-  padding: 4px 3px 4px 16px;
+  padding: 4px 16px;
   border:2px solid black;
 }
 .navbar-center{
@@ -75,16 +91,17 @@ body{
   justify-content: space-between;
 }
 .navbar-center a {
-  text-decoration: none;
   color:black;
   text-transform: uppercase;
-  font:800 14px arial;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--mont);
 }
-.navbar-center a:hover:not(.selected){
-  color:rgb(160, 138, 197);
+.navbar-center a:hover{
+  color:var(--purple);
 }
 .navbar-center .selected{
-  color:rgb(160, 138, 197);
+  color:var(--purple);
 }
 .navbar-right{
   position: absolute;
@@ -97,10 +114,8 @@ body{
   font-size: 25px;
 }
 .navbar-right a{
-  text-decoration:none;
   color: black;
 }
-ul{ list-style-type: none;}
 
 
 
@@ -117,7 +132,6 @@ ul{ list-style-type: none;}
 }
 .showcard .left{
   width: 750px; height: 560px;
-  background: rgb(238, 238, 238);
   position: relative;
 }
 .showcard .right{
@@ -127,7 +141,6 @@ ul{ list-style-type: none;}
 }
 .right-top{
   width: 360px; height: 200px;
-  background: rgb(202, 215, 223);
   position: relative;
 }
 .right-bottom{
@@ -137,17 +150,14 @@ ul{ list-style-type: none;}
 }
 .shopnowbtn{
   color: white;
-  background-color: rgb(130, 98, 181);
-  font:  14px verdana;
+  background-color: var(--purple);
+  font-size: 14px;
+  font-family:var(--mont);
   padding: 11px 18px 11px 20px;
-  text-decoration: none;
 }
 .shopnowbtn:hover{
-  color: rgb(130, 98, 181);
+  color: var(--purple);
   background-color: white;
-}
-.left img{
-  z-index: 2;
 }
 .left .bly{
   color: rgb(225, 225, 225);
@@ -164,8 +174,8 @@ ul{ list-style-type: none;}
   bottom: 207px; right: 98px;
 }
 .left .twohight{
-  color: black;
-  font: bold 24px verdana;
+  font-size: 30px;
+  font-family:var(--pacifico);
   letter-spacing: 0;
   position: absolute;
   bottom: 195px; right: 88px;
@@ -183,33 +193,37 @@ ul{ list-style-type: none;}
 }
 .right-top .smallthing{
   color:rgb(106, 107, 108);
-  font: bold 16px arial;
+  font-size: 16px;
+  font-family:var(--mont);
   letter-spacing: 3px;
   position:absolute;
-  left: 55px;bottom: 84px;
+  left: 55px;bottom: 100px;
 }
 .right-top .make{
-  color: black;
-  font: bolder 20px verdana;
+  font-size: 20px;
+  font-weight: 700;
+  font-family:var(--mont);
   letter-spacing: -1px;
-  word-spacing: -3px;
+  word-spacing: 0px;
   position: absolute;
-  left: 57px;bottom: 59px;
+  left: 55px;bottom: 76px;
 }
 .right-bottom .folio{
   color:rgb(106, 107, 108);
-  font:600 16px arial;
+  font-size: 16px;
+  font-family:var(--mont);
   letter-spacing: 3px;
   position:absolute;
-  left: 40px;bottom: 178px;
+  left: 40px;bottom: 195px;
   
 }
 .right-bottom .backpack{
-  color: black;
-  font: bolder 20px verdana;
+  font-size: 20px;
+  font-weight: 700;
+  font-family:var(--mont);
   letter-spacing: 0px;
   position: absolute;
-  left: 39px;bottom: 154px;
+  left: 40px;bottom: 170px;
 }
 .right-bottom .shopnowbtn{
   position: absolute;
@@ -219,17 +233,20 @@ ul{ list-style-type: none;}
 
 
 
-.contain p{
+.contain>p{
   margin: 78px 0 12px 0;
   text-transform:uppercase;letter-spacing: 6px;
-  font: 750 12px arial;
-  color:rgb(130, 98, 181);
+  font-size: 12px;
+  font-weight: 700;
+  font-family:var(--mont);
+  color:var(--purple);
   
 }
 .contain h2{
-  color:black;
   text-transform:uppercase;letter-spacing: 3px;
-  font:bolder 24px arial;
+  font-size: 24px;
+  font-weight: 700;
+  font-family:var(--mont);
   position: relative;
 }
 .contain h2::after{   /* Line under the featured items */
@@ -237,7 +254,7 @@ ul{ list-style-type: none;}
   position: absolute; left: 0; bottom: -24PX;
   height: 1px;
   width: 50px;
-  background-color: rgb(130, 98, 181);
+  background-color: var(--purple);
 }
 
 
@@ -274,34 +291,47 @@ ul{ list-style-type: none;}
 
   color:rgb(66, 66, 66);
   background-color: white;
-  text-decoration: none;
   text-transform: uppercase;
-  font:700 12px arial;
+  font-size: 12px;
+  font-family:var(--mont);
   padding: 13px 18px;
   letter-spacing:0px;
 }
 .img a:hover{
-  color: rgb(130, 87, 181);
+  color:var(--purple);
 }
 .items-name{
   margin: 14px 0 0 0;
-  font: 600 14px verdana ;
+  font-size: 20px;
+  font-family:var(--mont);
 }
+.items-name:hover{
+  color:var(--purple);
+}
+
 .items .rate{
+  color:yellow;
   margin:10px 0 10px 0;
   font-size:12px;
+  letter-spacing: 0px;
 }
-.items .price span{
-  font-weight: 200;
+.rate i:last-child{
+  color: rgb(212, 212, 212);
 }
 .items .price{
   margin: 0;
   letter-spacing: 0;
-  font: 600 16px arial;
+  color:var(--purple);
+  font-size: 16px;
+  font-weight: 700;
+  font-family:var(--mont);
 }
 .price span{
+  font-weight: 200;
   color: rgb(161, 161, 161);
   text-decoration: line-through;
+  font-size: 16px;
+  font-family:var(--mont);
 }
 
 
@@ -319,11 +349,15 @@ ul{ list-style-type: none;}
 .news>p{
   padding-top: 77px;
   letter-spacing: 2.5px;
-  color:rgb(130, 98, 181);
-  font: bolder 12px verdana;
+  color:var(--purple);
+  font-size: 12px;
+  font-weight: 700;
+  font-family:var(--mont);
 }
 .news>h2{
-  font: 700 23px verdana;
+  font-size: 24px;
+  font-weight: 700;
+  font-family:var(--mont);
   margin:12px 0 74px 0;
   letter-spacing: 1.5px;
   position: relative;
@@ -332,7 +366,7 @@ ul{ list-style-type: none;}
   content: " ";
   position: absolute;left: 930px; bottom: -25px;
   width: 55px;
-  background-color: rgb(130, 98, 181);
+  background-color: var(--purple);
   height: 1px;
 }
 .movcard{
@@ -355,6 +389,9 @@ ul{ list-style-type: none;}
 }
 .preview p{
   color: white;
+  font-size: 14px;
+  font-weight: 700;
+  font-family:var(--mont);
   background-color: rgb(161, 209, 221);
   position:absolute;
   left: 5px; top: 7px;
@@ -373,19 +410,18 @@ ul{ list-style-type: none;}
 }
 .second-movcard div a h5{
   padding: 18px 0 20px 18px;
-  font: bold 16px arial;
+  font-size: 16px;
+  font-family:var(--mont);
   letter-spacing: 0.5px;
-}
-.second-movcard a{
-  text-decoration:none;
   color: black;
 }
 .second-movcard a:hover{
-  color: rgb(130, 98, 181) ;
+  color:var(--purple) ;
 }
 .second-movcard .line-under{
   padding: 0 20px 20px 18px;
-  font: 15px arial;
+  font-size: 14px;
+  font-family:var(--open);
   color: rgb(66, 66, 66);
   letter-spacing: 0.5px;
   line-height: 1.35;
@@ -407,6 +443,8 @@ ul{ list-style-type: none;}
 }
 .items-social div{ 
   width: 65px;
+  font-size: 14px;
+  font-family:var(--open);
 }
 
 
@@ -430,7 +468,9 @@ ul{ list-style-type: none;}
 .details h3{
   margin: 58px 0 55px 0 ;
   color:white;
-  font: 200 16px verdana;
+  font-size: 16px;
+  font-weight: 400;
+  font-family:var(--mont);
   letter-spacing: 0.8px;
   position: relative;
 }
@@ -443,9 +483,10 @@ ul{ list-style-type: none;}
 }
 .details a{
   color:rgb(116,116,116);
-  text-decoration:none;
   text-transform: capitalize;
-  font: 14px verdana;
+  font-size: 14px;
+  font-weight: 400;
+  font-family:var(--open);
 }
 .details a:hover{
   color: white;
@@ -458,12 +499,15 @@ ul{ list-style-type: none;}
   margin: 50px 0 0 0;
 }
 .icons-social i{
-  font-size: 15px;
+  font-size: 16px;
   display: inline-block;
   margin:0 29px 0 0;
 }
 .details-about>p{
-  font: bold 15px arial;
+  font-size: 14px;
+  font-weight: 400;
+  font-family:var(--open);
+  color:rgb(126, 126, 126)
   line-height: 1.4;
 }
 .details-nav{
@@ -520,7 +564,9 @@ ul{ list-style-type: none;}
   vertical-align: baseline;
 }
 .copyright {
-  font:400 14px verdana;
+  font-size: 14px;
+  font-weight: 400;
+  font-family:var(--mont);
   letter-spacing: 0.01px;
 }
 .copyright .red-heart{
@@ -528,7 +574,9 @@ ul{ list-style-type: none;}
   color:rgb(255, 70, 40);
 }
 .copyright b{
-  font-weight: 100;
+  font-size: 14px;
+  font-weight: 400;
+  font-family:var(--mont);
   color: white;
 }
 .payment{
